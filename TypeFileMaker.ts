@@ -18,7 +18,7 @@ export class TypeFileMaker{
         return fileContent
     }
 
-    private writeFile = (fileName:string,fileContent) => {
+    private writeFile = (fileName:string,fileContent:string) => {
         fs.writeFile(fileName,fileContent,()=>{
             console.log("success")
         })
